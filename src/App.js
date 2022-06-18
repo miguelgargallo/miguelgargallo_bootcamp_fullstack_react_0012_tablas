@@ -1,6 +1,7 @@
 import "./styles.css";
-import { Melo } from "./Note.js";
+import { Melo, getNumber } from "./Note.js";
 
+getNumber();
 const notes = [
   {
     id: 124975,

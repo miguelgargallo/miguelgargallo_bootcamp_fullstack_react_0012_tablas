@@ -10,3 +10,5 @@ export const Melo = ({ content, date, txamount, fee }) => {
     </li>
   );
 };
+
+export const getNumber = () => 2;
