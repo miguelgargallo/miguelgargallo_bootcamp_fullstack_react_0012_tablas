@@ -21,16 +21,24 @@ const notes = [
   }
 ];
 
+const Note = ({ note }) => {
+  console.log(note);
+
+  return (
+    <li key={note.id}>
+      <p>{note.content}</p>
+      <small>
+        <time>{note.date}</time>
+      </small>
+    </li>
+  );
+};
+
 export default function App() {
   return (
     <ol>
       {notes.map((note) => (
-        <li key={note.id}>
-          <p>{note.content}</p>
-          <small>
-            <time>{note.date}</time>
-          </small>
-        </li>
+        <Note note={note} />
       ))}
     </ol>
   );
