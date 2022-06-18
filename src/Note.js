@@ -1,4 +1,4 @@
-const Note = ({ content, date, txamount, fee }) => {
+export const Melo = ({ content, date, txamount, fee }) => {
   return (
     <li>
       <p>{content}</p>
@@ -10,5 +10,3 @@ const Note = ({ content, date, txamount, fee }) => {
     </li>
   );
 };
-
-export default Note;

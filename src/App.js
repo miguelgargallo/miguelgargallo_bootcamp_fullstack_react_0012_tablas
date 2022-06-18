@@ -1,5 +1,5 @@
 import "./styles.css";
-import Melo from "./Note.js";
+import { Melo } from "./Note.js";
 
 const notes = [
   {
