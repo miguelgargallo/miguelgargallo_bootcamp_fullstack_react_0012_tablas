@@ -23,15 +23,15 @@ const notes = [
 
 export default function App() {
   return (
-    <div>
+    <ul>
       {notes.map((note) => (
-        <div>
+        <li key={note.id}>
           <p>{note.content}</p>
           <small>
             <time>{note.date}</time>
           </small>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
