@@ -3,32 +3,30 @@ import "./styles.css";
 const notes = [
   {
     id: 13,
-    content: "HTML not easy",
+    content: "Viva la pela",
     date: "2022-02-01T01:10:01.001Z",
     important: true
   },
   {
     id: 15,
-    content: "HTML not easy",
-    date: "2022-02-01T01:10:01.001Z",
+    content: "Viva la constitucion",
+    date: "2022-02-02T01:10:01.001Z",
     important: true
   },
   {
     id: 23,
-    content: "HTML equals easy",
-    date: "2022-03-01T01:10:01.001Z",
+    content: "Viva las palmeras",
+    date: "2022-03-03T01:10:01.001Z",
     important: true
   }
 ];
 
-const Note = ({ note }) => {
-  console.log(note);
-
+const Note = ({ id, content, date }) => {
   return (
-    <li key={note.id}>
-      <p>{note.content}</p>
+    <li key={id}>
+      <p>{content}</p>
       <small>
-        <time>{note.date}</time>
+        <time>{date}</time>
       </small>
     </li>
   );
@@ -38,7 +36,7 @@ export default function App() {
   return (
     <ol>
       {notes.map((note) => (
-        <Note note={note} />
+        <Note id={note.id} content={note.content} date={note.date} />
       ))}
     </ol>
   );
