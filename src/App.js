@@ -36,12 +36,7 @@ export default function App() {
   return (
     <ol>
       {notes.map((note) => (
-        <Note
-          key={note.id}
-          id={note.id}
-          content={note.content}
-          date={note.date}
-        />
+        <Note {...note} />
       ))}
     </ol>
   );
