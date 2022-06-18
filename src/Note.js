@@ -1,5 +1,6 @@
 export const Melo = (props) => {
   console.log({ props });
+  debugger;
 
   const { content, date } = props;
 
