@@ -23,7 +23,7 @@ const notes = [
 
 export default function App() {
   return (
-    <ul>
+    <ol>
       {notes.map((note) => (
         <li key={note.id}>
           <p>{note.content}</p>
@@ -32,6 +32,6 @@ export default function App() {
           </small>
         </li>
       ))}
-    </ul>
+    </ol>
   );
 }
