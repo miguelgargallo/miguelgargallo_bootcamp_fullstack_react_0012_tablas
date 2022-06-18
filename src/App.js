@@ -1,4 +1,5 @@
 import "./styles.css";
+import Melo from "./Note.js";
 
 const notes = [
   {
@@ -21,22 +22,11 @@ const notes = [
   }
 ];
 
-const Note = ({ id, content, date }) => {
-  return (
-    <li>
-      <p>{content}</p>
-      <small>
-        <time>{date}</time>
-      </small>
-    </li>
-  );
-};
-
 export default function App() {
   return (
     <ol>
       {notes.map((note) => (
-        <Note key={note.id} {...note} />
+        <Melo key={note.id} {...note} />
       ))}
     </ol>
   );
