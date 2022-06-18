@@ -36,7 +36,7 @@ export default function App() {
   return (
     <ol>
       {notes.map((note) => (
-        <Note {...note} />
+        <Note key={note.id} {...note} />
       ))}
     </ol>
   );
