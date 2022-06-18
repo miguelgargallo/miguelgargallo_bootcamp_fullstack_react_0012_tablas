@@ -2,19 +2,19 @@ import "./styles.css";
 
 const notes = [
   {
-    id: 2,
+    id: 13,
     content: "HTML not easy",
     date: "2022-02-01T01:10:01.001Z",
     important: true
   },
   {
-    id: 2,
+    id: 15,
     content: "HTML not easy",
     date: "2022-02-01T01:10:01.001Z",
     important: true
   },
   {
-    id: 3,
+    id: 23,
     content: "HTML equals easy",
     date: "2022-03-01T01:10:01.001Z",
     important: true
@@ -24,16 +24,14 @@ const notes = [
 export default function App() {
   return (
     <div>
-      {notes.map((note) => {
-        return (
-          <div>
-            <p>{note.content}</p>
-            <small>
-              <time>{note.date}</time>
-            </small>
-          </div>
-        );
-      })}
+      {notes.map((note) => (
+        <div>
+          <p>{note.content}</p>
+          <small>
+            <time>{note.date}</time>
+          </small>
+        </div>
+      ))}
     </div>
   );
 }
