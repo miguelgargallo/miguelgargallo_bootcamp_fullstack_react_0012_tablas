@@ -3,21 +3,22 @@ import { Melo } from "./Note.js";
 
 const notes = [
   {
-    id: 124975,
-    content: "f2pool",
-    date: "2022-06-18 12:18:11",
+    id: 1,
+    wallet: "a",
+    domain: "visit.teide",
+    important: true,
+    currencies: ["HNS", "CANAR", "SOL"]
+  },
+  {
+    id: 2,
+    wallet: "b",
+    domain: "quetal.tío",
     important: true
   },
   {
-    id: 124974,
-    content: "Poolin",
-    date: "2022-06-18 12:14:48",
-    important: true
-  },
-  {
-    id: 124973,
-    content: "f2pool",
-    date: "2022-06-18 12:07:01",
+    id: 3,
+    wallet: "c",
+    domain: "pen.cil",
     important: true
   }
 ];
