@@ -1,6 +1,6 @@
-/* export const Melo = ({ content, date, txamount, fee }) => { */
 export const Melo = (props) => {
-  console.log("props", props);
+  console.log({ props });
+  debugger;
 
   const { content, date } = props;
 
