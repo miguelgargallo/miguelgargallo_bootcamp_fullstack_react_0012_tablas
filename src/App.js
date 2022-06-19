@@ -2,7 +2,7 @@ import "./styles.css";
 import { useState } from "react";
 import { Note } from "./Note.js";
 
-let cariable = "";
+let variable = "";
 
 export default function App(props) {
   const [notes, setNotes] = useState(props.notes);
