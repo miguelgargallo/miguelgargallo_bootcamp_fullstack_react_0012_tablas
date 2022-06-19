@@ -32,6 +32,7 @@ export default function App(props) {
           <Note key={note.id} {...note} />
         ))}
       </ol>
+
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} value={newNote} />
         <button>Add Domain</button>
