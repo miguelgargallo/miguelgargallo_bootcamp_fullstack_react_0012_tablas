@@ -8,6 +8,7 @@ export default function App(props) {
 
   const handleChange = (event) => {
     const newNote = event.target.value;
+    console.log(newNote);
   };
 
   const handleClick = (event) => {
