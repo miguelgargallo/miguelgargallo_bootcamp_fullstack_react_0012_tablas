@@ -36,9 +36,14 @@ export default function App(props) {
         {showAll ? "Show only important" : "Show all"}
       </button>
       <ol>
-        {notes.map((note) => (
-          <Note key={note.id} {...note} />
-        ))}
+        {notes
+          .filter((note) => {
+            if (showAll === true) return note;
+            return note.important === true;
+          })
+          .map((note) => (
+            <Note key={note.id} {...note} />
+          ))}
       </ol>
 
       <form onSubmit={handleSubmit}>
