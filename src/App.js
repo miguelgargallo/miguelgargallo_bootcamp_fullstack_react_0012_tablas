@@ -21,7 +21,7 @@ export default function App(props) {
       important: Math.random() < 0.5
     };
 
-    setNotes(notes.concat(noteToAddToState));
+    setNotes((prevNotes) => prevNotes.concat(noteToAddToState));
     setNewNote("");
   };
 
