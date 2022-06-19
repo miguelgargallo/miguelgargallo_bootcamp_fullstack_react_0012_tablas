@@ -11,28 +11,21 @@ export default function App(props) {
   };
 
   const handleClick = (event) => {
-    console.log("crear nota");
+    console.log("Añadir dominio");
     const noteToAddToState = {
       id: notes.lenght + 1,
       content: newNote,
       date: new Date().toISOString(),
       important: Math.random() < 0.5
     };
-    console.log(noteToAddToState);
 
-    /*
-    {
-      id: 3,
-      content: "f2pool",
-      date: "2022-06-18 12:07:01",
-      important: true
-    }
-    */
+    setNotes([...notes, noteToAddToState]);
+    setNewNote("");
   };
 
   return (
     <div>
-      <h1>Notes</h1>
+      <h1>Domains</h1>
       <ol>
         {notes.map((note) => (
           <Note key={note.id} {...note} />
@@ -40,7 +33,7 @@ export default function App(props) {
       </ol>
       <div>
         <input type="text" onChange={handleChange} value={newNote} />
-        <button onClick={handleClick}>Crear nota</button>
+        <button onClick={handleClick}>Add Domain</button>
       </div>
     </div>
   );

@@ -5,21 +5,21 @@ import App from "./App";
 const notes = [
   {
     id: 1,
-    content: "f2pool",
-    date: "2022-06-18 12:18:11",
+    content: "visit.teide",
+    date: "2022-06-19 04:58:57",
     important: true,
     categories: ["HNS", "SOL", "CANAR"]
   },
   {
     id: 2,
-    content: "Poolin",
-    date: "2022-06-18 12:14:48",
+    content: "pen.cil",
+    date: "2022-06-19 05:59:03",
     important: true
   },
   {
     id: 3,
-    content: "f2pool",
-    date: "2022-06-18 12:07:01",
+    content: "vamos.tío",
+    date: "2022-06-19 06:00:14",
     important: true
   }
 ];
