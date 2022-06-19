@@ -20,7 +20,7 @@ export default function App(props) {
       date: new Date().toISOString(),
       important: Math.random() < 0.5
     };
-
+    // Pasar funciones dentro de parametros
     setNotes((prevNotes) => prevNotes.concat(noteToAddToState));
     setNewNote("");
   };
