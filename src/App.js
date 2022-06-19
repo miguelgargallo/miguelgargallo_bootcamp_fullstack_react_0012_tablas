@@ -38,11 +38,11 @@ export default function App(props) {
       <ol>
         {notes
           .filter((note) => {
-            if (showAll === true) return true; // Debería devolver un boolean, show all debería ser siempre true
+            if (showAll === true) return true;
             return note.important === true;
           })
           .map((note, index) => (
-            <Note key={index} {...note} />
+            <Note key={note.id} {...note} />
           ))}
       </ol>
 
