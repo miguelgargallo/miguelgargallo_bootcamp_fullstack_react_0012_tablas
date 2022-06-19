@@ -10,7 +10,8 @@ export default function App(props) {
     setNewNote(event.target.value);
   };
 
-  const handleClick = (event) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     console.log("Añadir dominio");
     const noteToAddToState = {
       id: notes.lenght + 1,
@@ -31,10 +32,10 @@ export default function App(props) {
           <Note key={note.id} {...note} />
         ))}
       </ol>
-      <div>
+      <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleChange} value={newNote} />
-        <button onClick={handleClick}>Add Domain</button>
-      </div>
+        <button>Add Domain</button>
+      </form>
     </div>
   );
 }
