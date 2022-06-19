@@ -5,21 +5,21 @@ import App from "./App";
 const notes = [
   {
     id: 1,
-    wallet: "a",
-    domain: "visit.teide",
+    content: "f2pool",
+    date: "2022-06-18 12:18:11",
     important: true,
-    currencies: ["HNS", "CANAR", "SOL"]
+    categories: ["HNS", "SOL", "CANAR"]
   },
   {
     id: 2,
-    wallet: "b",
-    domain: "quetal.tío",
+    content: "Poolin",
+    date: "2022-06-18 12:14:48",
     important: true
   },
   {
     id: 3,
-    wallet: "c",
-    domain: "pen.cil",
+    content: "f2pool",
+    date: "2022-06-18 12:07:01",
     important: true
   }
 ];

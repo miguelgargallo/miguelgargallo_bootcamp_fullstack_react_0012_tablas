@@ -1,15 +1,16 @@
-export const Melo = (props) => {
-  const { currencies = [], domain, wallet } = props;
+export const Note = (props) => {
+  console.log({ props });
+
+  const { categories = [], content, date } = props;
 
   return (
     <li>
-      <p>{domain}</p>
+      <p>{content}</p>
       <small>
-        <time>{wallet}</time>
+        <time>{date}</time>
       </small>
-      {currencies.map((currency) => (
-        <small key={currency}>{currency}</small>
-      ))}
     </li>
   );
 };
+
+export const getNumber = () => 2;
