@@ -19,7 +19,7 @@ export default function App(props) {
       important: Math.random() < 0.5
     };
 
-    setNotes([...notes, noteToAddToState]);
+    setNotes(notes.concat(noteToAddToState));
     setNewNote("");
   };
 
