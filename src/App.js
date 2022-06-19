@@ -12,7 +12,22 @@ export default function App(props) {
 
   const handleClick = (event) => {
     console.log("crear nota");
-    console.log(newNote);
+    const noteToAddToState = {
+      id: notes.lenght + 1,
+      content: newNote,
+      date: new Date().toISOString(),
+      important: Math.random() < 0.5
+    };
+    console.log(noteToAddToState);
+
+    /*
+    {
+      id: 3,
+      content: "f2pool",
+      date: "2022-06-18 12:07:01",
+      important: true
+    }
+    */
   };
 
   return (
@@ -24,7 +39,7 @@ export default function App(props) {
         ))}
       </ol>
       <div>
-        <input type="text" onChange={handleChange} />
+        <input type="text" onChange={handleChange} value={newNote} />
         <button onClick={handleClick}>Crear nota</button>
       </div>
     </div>
