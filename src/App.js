@@ -7,11 +7,12 @@ export default function App(props) {
   const [newNote, setNewNote] = useState("");
 
   const handleChange = (event) => {
-    const newNote = event.target.value;
+    setNewNote(event.target.value);
   };
 
   const handleClick = (event) => {
     console.log("crear nota");
+    console.log(newNote);
   };
 
   return (
